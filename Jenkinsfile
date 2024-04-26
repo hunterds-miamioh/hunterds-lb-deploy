@@ -2,8 +2,8 @@ pipeline {
     agent any 
 
     environment {
-        GITHUB_URL = 'https://github.com/hunterds-miamioh/hunterds-lb-deploy.git'  // <---- Change this to match your cloned repository
-        KUBECONFIG = credentials('hunterds-225')   // <---- Change this to match your kubernetes cluster credentials
+        GITHUB_URL = 'https://github.com/hunterds-miamioh/vm-deploy-lb.git'  // <---- Change this to match your cloned repository
+        KUBECONFIG = credentials('hunterds-cluster')   // <---- Change this to match your kubernetes cluster credentials
     }
 
     stages {
